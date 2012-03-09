@@ -6,6 +6,7 @@ from bookmarks.views import *
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-   	(r'^$', main_page)
+   	(r'^$', main_page),
+	(r'^user/(\w+)/$', user_page),
  
 )
